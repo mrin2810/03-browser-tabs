@@ -6,7 +6,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
+  NavLink,
 } from "react-router-dom";
 import Home from './pages/Home';
 import Features from './pages/Features';
@@ -19,13 +19,13 @@ function App() {
         <div className="browser">
           <div className="tabs">
             <Tab>
-              <Link to='/'>Home</Link>
+              <NavLink to='/' exact={true} activeClassName="is-active">Home</NavLink>
             </Tab>
             <Tab>
-              <Link to='/about'>About</Link>
+              <NavLink to='/about' exact={true} activeClassName="is-active">About</NavLink>
             </Tab>
             <Tab>
-              <Link to='/features'>Features</Link>
+              <NavLink to='/features' exact={true} activeClassName="is-active">Features</NavLink>
             </Tab>
           </div>
           <div className="viewport">
