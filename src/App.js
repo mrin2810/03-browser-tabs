@@ -7,13 +7,14 @@ function App() {
       <div className="browser">
         <div className="tabs">
           <div className="tab">
-            <a>Home</a>
+            <div className='highlight' />
+            <a href='localhost://3000'>Home</a>
           </div>
           <div className="tab">
-            <a>About</a>
+            <a href='localhost://3000'>About</a>
           </div>
-          <div className="tab">
-            <a>Features</a>
+          <div className="tab ">
+            <a href='localhost://3000'>Features</a>
           </div>
         </div>
 
