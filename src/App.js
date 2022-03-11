@@ -1,39 +1,23 @@
-import React, { useState } from 'react';
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import React from 'react';
 import './App.css';
+import Tab from './components/Tab';
 
 function App() {
-
-  const [highlightStyle, setHighlightStyle] = useState({ left: 0});
-
-  function moveHighlight(e) {
-    setHighlightStyle({
-      left: e.nativeEvent.layerX - 150,
-    })
-  }
-  
-  function hideHighlight(e) {
-    setHighlightStyle({
-      opacity: 0,
-      left: e.nativeEvent.layerX - 150,
-    })
-  }
-
   return (
     <div className="app">
       <div className="browser">
         <div className="tabs">
-          <div className="tab" onMouseMove={moveHighlight} onMouseOut={hideHighlight}>
-            <div className='highlight' style={highlightStyle}/>
-            <a href='localhost://3000'>Home</a>
-          </div>
-          <div className="tab">
-            <a href='localhost://3000'>About</a>
-          </div>
-          <div className="tab ">
-            <a href='localhost://3000'>Features</a>
-          </div>
+          <Tab>
+            <a>Home</a>
+          </Tab>
+          <Tab>
+            <a>About</a>
+          </Tab>
+          <Tab>
+            <a>Features</a>
+          </Tab>
         </div>
-
         <div className="viewport">Pages Go Here</div>
       </div>
     </div>
