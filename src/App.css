@@ -100,5 +100,6 @@ body {
   opacity: 0.2;
   pointer-events: none;
   top: -10px;
+  left: -100px;
   background: radial-gradient(rgba(157, 128, 238, 1), rgba(157, 128, 238, 0));
 }
