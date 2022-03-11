@@ -101,5 +101,5 @@ body {
   pointer-events: none;
   top: -10px;
   background: radial-gradient(red, purple, rgba(157, 128, 238, 1));
-  transition: 0.3 ease all;
+  transition: 0.3s ease all;
 }
